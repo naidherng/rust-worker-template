@@ -1,5 +1,5 @@
 [package]
-name = "worker-rust"
+name = "rust-worker-template"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,10 +7,10 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-worker = "0.0.18"
+worker = "0.3.0"
 
 [profile.release]
-opt-level = "s" # optimize for size in release builds
+opt-level = "s"   # optimize for size in release builds
 lto = true
 strip = true
 codegen-units = 1
